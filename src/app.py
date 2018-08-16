@@ -3,10 +3,7 @@ from models.post import Post
 
 Database.initialize()
 
-post = Post(blog_id="123",
-            title="Another great post",
-            content="This is some sample content",
-            author="Jose")
+post = Post.from_mongo("77515483f72c46b8b3e873f3bd1312e3")
 
 
-post.save_to_mongo()
+print(post)
